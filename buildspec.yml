@@ -1,0 +1,29 @@
+version: 0.2
+
+env:
+  variables:
+    CACHE_CONTROL: '86400'
+    S3_BUCKET: '{{s3_bucket_url}}'
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+
+  build:
+    commands:
+
+  post_build:
+    commands:
+      - echo "Updating files in the S3 bucket..."
+      - ls -al
+      - export S3_BUCKET=$S3_Bucket
+      - aws s3 rm $S3_BUCKET --recursive
+      - aws s3 sync . $S3_BUCKET #--acl public-read
+      - echo "....Frontend UI deployment is Successful...."
+
+    artifacts:
+      files:
+        - '**/*'
+      base-directory: '*'
+      discard-paths: yes
