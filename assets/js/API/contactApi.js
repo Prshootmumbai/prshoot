@@ -15,7 +15,7 @@ function validationForm() {
   // var faddress = document.getElementById('inputAddress').value;
   const message = document.getElementById('inputMessage').value;
 
-  console.log('fname', name);
+  console.log('fsdsadname', name);
   console.log('femail', email);
 
   sendEmail(url, { name, email, mobile, message });
