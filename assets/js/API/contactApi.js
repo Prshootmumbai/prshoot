@@ -51,6 +51,7 @@ function validationForm() {
 }
 
 async function sendEmail(url, body) {
+  console.log('hi');
   const response = await fetch(url, {
     method: 'POST',
     headers: {
