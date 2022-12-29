@@ -433,7 +433,6 @@
 												</div>
 
 											</div>
-
 											<div class="tt-col-md-6">
 
 												<div class="tt-form-group">
@@ -445,10 +444,11 @@
 											</div>
 										</div>
 
+
 										<div class="tt-form-group">
 											<label>Phone Number</label>
 											<input class="tt-form-control formerror" type="text" id="inputPhone"
-												name="fphone" placeholder="" required value="">
+												name="fphone" placeholder="">
 										</div>
 
 										<!-- <div class="tt-form-group">
@@ -673,6 +673,15 @@
 
 	<!-- Theme master JS -->
 	<script src="assets/js/theme.js"></script>
+
+
+	<script src="/assets//js/API/contactApi.js"></script>
+	<script>
+		$("#contactForm").submit(function (e) {
+			e.preventDefault();
+		});
+
+	</script>
 
 
 

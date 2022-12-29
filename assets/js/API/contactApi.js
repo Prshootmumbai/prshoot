@@ -1,5 +1,4 @@
-
-
+const url = 'https://2oj2z3lfgfo5uhn4i4v7jtgdjm0jerjr.lambda-url.us-east-1.on.aws/'
 function validationForm() {
 
 
@@ -11,26 +10,16 @@ function validationForm() {
     // function handleForm(event) { event.preventDefault(); }
     // form.addEventListener('submit', handleForm);
     // e.preventDefault();
-    var fname = document.getElementById('inputName').value;
-    var femail = document.getElementById('inputEmail').value;
-    var fphone = document.getElementById('inputPhone').value;
-    var faddress = document.getElementById('inputAddress').value;
-    var fmessage = document.getElementById('inputMessage').value
+    const name = document.getElementById('inputName').value;
+    const email = document.getElementById('inputEmail').value
+    const mobile = document.getElementById('inputPhone').value;
+    // var faddress = document.getElementById('inputAddress').value;
+    const message = document.getElementById('inputMessage').value
 
-    var arrayFormData = { fname, fphone, faddress, femail, fmessage }
+    console.log("fname", name)
+    console.log("femail", email)
 
-    console.log('Form Data', arrayFormData)
-    document.writeln('Your Info:-  <br/>' + 'Name:' + fname + '<br/>');
-    document.writeln('Your Email:-' + femail)
-    document.writeln('Your Phone:-' + fphone)
-    document.writeln('Your Address:-' + faddress)
-    document.writeln('Your Message:-' + fmessage)
-    // console.log('fname', fname)
-    // localStorage.setItem(fname, "fname")
-    // localStorage.setItem(fphone, "fphone")
-    // localStorage.setItem(femail, "femail")
-    // localStorage.setItem(faddress, "faddress")
-    // localStorage.setItem(fmessage, "fmessage")
+    sendEmail(url, { name, email, mobile, message })
 
     // if (userName.value.trim() === '') {
     // 	seterror(userName, 'name length require')
@@ -66,10 +55,13 @@ function validationForm() {
 
 
 
-//  const url='http://127.0.0.1:5500/contact.html';
-// const url = 'http://contact.html'
-// async function sendEmail(url) {
-//     const response = await fetch(url);
-//     var data = await response.json();
-//     console.log(data);
-// }
+async function sendEmail(url, body) {
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body
+    });
+
+    const result = await response.json();
+    console.log(result)
+}
