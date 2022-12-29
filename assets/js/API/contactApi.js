@@ -1,5 +1,5 @@
 const url =
-  'https://2oj2z3lfgfo5uhn4i4v7jtgdjm0jerjr.lambda-url.us-east-1.on.aws/';
+  'https://45bkx6pi78.execute-api.us-east-1.amazonaws.com/prshoot-contact-us';
 function validationForm() {
   // $("#contactForm").submit(function (e) {
   //     e.preventDefault();
