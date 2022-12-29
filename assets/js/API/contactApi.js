@@ -15,7 +15,7 @@ function validationForm() {
   // var faddress = document.getElementById('inputAddress').value;
   const message = document.getElementById('inputMessage').value;
 
-  console.log('1', name);
+  console.log('fname', name);
   console.log('femail', email);
 
   sendEmail(url, { name, email, mobile, message });
@@ -51,14 +51,15 @@ function validationForm() {
 }
 
 async function sendEmail(url, body) {
-  console.log('hi');
+  console.log(body);
   const response = await fetch(url, {
     method: 'POST',
     headers: {
+      'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': '*',
     },
-    body,
+    body: JSON.stringify(body),
   });
 
   const result = await response.json();
