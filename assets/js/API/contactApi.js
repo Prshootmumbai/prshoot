@@ -58,6 +58,7 @@ async function sendEmail(url, body) {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': '*',
+      mode: 'no-cors',
     },
     body: JSON.stringify(body),
   });
