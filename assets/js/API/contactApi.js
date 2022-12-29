@@ -1,5 +1,5 @@
 const url =
-  'https://45bkx6pi78.execute-api.us-east-1.amazonaws.com/prshoot-contact-us';
+  'https://cors-anywhere.herokuapp.com/https://45bkx6pi78.execute-api.us-east-1.amazonaws.com/prshoot-contact-us';
 function validationForm() {
   // $("#contactForm").submit(function (e) {
   //     e.preventDefault();
