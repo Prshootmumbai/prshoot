@@ -15,7 +15,7 @@ function validationForm() {
   // var faddress = document.getElementById('inputAddress').value;
   const message = document.getElementById('inputMessage').value;
 
-  console.log('fsdsadname', name);
+  console.log('1', name);
   console.log('femail', email);
 
   sendEmail(url, { name, email, mobile, message });
@@ -55,7 +55,6 @@ async function sendEmail(url, body) {
   const response = await fetch(url, {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Headers': '*',
     },
