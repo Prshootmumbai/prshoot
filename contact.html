@@ -409,63 +409,66 @@
 										* Use class "tt-form-filled" or "tt-form-minimal" to change form style.
 										* Use class "tt-form-sm" or "tt-form-lg" to change form size (no class = default size).
 										-->
-									<form id="tt-contact-form" class="tt-form-minimal anim-fadeinup">
 
+									<form onsubmit="validationForm()" id="contactForm"
+										class="tt-form-minimal anim-fadeinup">
 										<!-- Begin hidden required fields (https://github.com/agragregra/uniMail) -->
-										<input type="hidden" name="project_name" value="yourwebsiteaddress.com">
+										<!-- <input type="hidden" name="project_name" value="yourwebsiteaddress.com" /> -->
 										<!-- Change value to your site name -->
-										<input type="hidden" name="admin_email" value="your@email.com">
+										<!-- <input type="hidden" name="admin_email" value="your@email.com" /> -->
 										<!-- Change value to your valid email address (where a message will be sent) -->
-										<input type="hidden" name="form_subject"
-											value="Message from yourwebsiteaddress.com">
+										<!-- <input type="hidden" name="form_subject"
+											value="Message from yourwebsiteaddress.com" /> -->
 										<!-- Change value to your own message subject -->
 										<!-- End Hidden Required Fields -->
+
 
 										<div class="tt-row">
 											<div class="tt-col-md-6">
 
 												<div class="tt-form-group">
-													<label>Name <span class="required">*</span></label>
-													<input class="tt-form-control" type="text" name="Name"
-														placeholder="" required>
+													<label>Name/Orgination <span class="required">*</span></label>
+													<input class="tt-form-control formerror" type="text" id="inputName"
+														name="fname" placeholder="" required value="">
 												</div>
 
-											</div> <!-- /.tt-col -->
+											</div>
 
 											<div class="tt-col-md-6">
 
 												<div class="tt-form-group">
 													<label>Email address <span class="required">*</span></label>
-													<input class="tt-form-control" type="email" name="Email"
-														placeholder="" required>
+													<input class="tt-form-control formerror" type="email"
+														id="inputEmail" name="femail" placeholder="" required value="">
 												</div>
 
-											</div> <!-- /.tt-col -->
-										</div> <!-- /.tt-row -->
-
-										<div class="tt-form-group">
-											<label>Phone Number <span class="required">*</span></label>
-											<input class="tt-form-control" type="text" name="Subject" placeholder=""
-												required>
+											</div>
 										</div>
 
 										<div class="tt-form-group">
+											<label>Phone Number</label>
+											<input class="tt-form-control formerror" type="text" id="inputPhone"
+												name="fphone" placeholder="" required value="">
+										</div>
+
+										<!-- <div class="tt-form-group">
 											<label>Address <span class="required">*</span></label>
-											<input class="tt-form-control" type="text" name="Subject" placeholder=""
-												required>
-										</div>
+											<input class="tt-form-control formerror" type="text" name="faddress"
+												id="inputAddress" placeholder="" required value="">
+										</div> -->
 
 										<div class="tt-form-group">
 											<label>Message <span class="required">*</span></label>
-											<textarea class="tt-form-control" rows="6" name="Message" placeholder=""
-												required></textarea>
+											<textarea class="tt-form-control formerror" rows="6" name="fmessage"
+												id="inputMessage" placeholder="" required value=""></textarea>
 										</div>
 
 										<small class="tt-form-text"><em>Fields marked with an asterisk (*) are
 												required!</em></small>
 
 										<div class="tt-btn tt-btn-light-outline margin-top-40">
-											<button type="submit" data-hover="Send Message">Send Message</button>
+											<button type="submit" data-hover=" Send Message">Send
+												Message</button>
 										</div>
 									</form>
 									<!-- End form -->
