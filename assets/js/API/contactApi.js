@@ -53,6 +53,10 @@ function validationForm() {
 }
 
 
+// const formData = new URLSearchParams(new FormData(document.getElementById("contactForm")))
+// var url=" https://2oj2z3lfgfo5uhn4i4v7jtgdjm0jerjr.lambda-url.us-east-1.on.aws"
+
+
 
 
 async function sendEmail(url, body) {
