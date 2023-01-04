@@ -92,10 +92,30 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 60rem){
+
+  body ,.bli-desc{
+    font-size: .9375rem !important;
+  }
+}
+
 .column {
   float: left;
   width: 33.33%;
-  padding: 5px;
+  /* height: 70px;
+  margin-left: 4px; */
+  padding-right: 5px;
+}
+.column img{
+  width: 50%;
+  height: 50%;
+  margin-left: 10vw;
+}
+.downFooter{
+  height: 30px;
+}
+.margin-5-p{
+  height: 120px;
 }
 
 /* Clear floats after image containers */
@@ -4813,7 +4833,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
 .portfolio-interactive-item::before {
   position: absolute;
   counter-increment: pi-item-counter;
-  content: '' counter(pi-item-counter, decimal-leading-zero);
+  /* content: '' counter(pi-item-counter, decimal-leading-zero); */
   top: 10%;
   left: -40px;
   line-height: 1;
@@ -6382,7 +6402,7 @@ video.tt-pci-video {
   position: relative;
   display: block;
   left: 50%;
-  font-size: clamp(42px, 6vw, 110px);
+  font-size: 2rem;
   font-weight: bold;
   font-weight: 500;
   color: #fff;
