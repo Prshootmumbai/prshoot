@@ -7366,6 +7366,7 @@ body:not(.tt-magic-cursor) .social-buttons > ul > li a:hover {
 
 .tt-accordion-item {
   position: relative;
+  padding: 3%;
 }
 
 /* Accordion heading 
