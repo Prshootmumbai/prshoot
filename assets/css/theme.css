@@ -1564,6 +1564,7 @@ body.tt-smooth-scroll.tt-ol-menu-open .scrollbar-track {
   .tt-ol-menu-list > li {
     margin-top: 15px;
     margin-bottom: 15px;
+    list-style: none;
   }
 }
 .tt-ol-menu-list > li:first-child {
@@ -1585,8 +1586,8 @@ body.tt-smooth-scroll.tt-ol-menu-open .scrollbar-track {
     > .tt-ol-submenu-trigger
     > a::before {
     position: absolute;
-    counter-increment: ol-menu-list-counter;
-    content: '' counter(ol-menu-list-counter, decimal-leading-zero);
+    /* counter-increment: ol-menu-list-counter;
+    content: '' counter(ol-menu-list-counter, decimal-leading-zero); */
     top: 5px;
     left: -30px;
     line-height: 1;
