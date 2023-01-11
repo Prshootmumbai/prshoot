@@ -7307,11 +7307,11 @@ body:not(.is-mobile) .tt-btn-link:hover::after {
  * Social buttons
 /* ------------------------------------------------------------- */
 
-.social-buttons {
-}
+/* .social-buttons {
+} */
 .social-buttons ul {
-  display: inline-flex;
-  flex-wrap: wrap;
+  display:flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -9865,6 +9865,7 @@ body:not(.tt-boxed) .tt-footer-inner,
     padding-right: 0;
   }
   .footer-col-inner {
+    /* width: 100%;  */
   }
 
   /* Align footer column content */
