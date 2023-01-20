@@ -616,7 +616,7 @@ body.tt-magic-cursor #magic-cursor {
 }
 @media (max-width: 480px) {
   .tt-section {
-    padding: 15% 0;
+    /* padding: 15% 0; */
   }
 }
 
