@@ -104,12 +104,15 @@ body {
   width: 33.33%;
   /* height: 70px;
   margin-left: 4px; */
-  padding-right: 5px;
+  padding: 5px;
 }
 .column img{
   width: 50%;
   height: 50%;
   margin-left: 10vw;
+}
+#addBackground{
+  background-image: url(../img/clients/b-2.jfif);
 }
 .downFooter{
   height: 30px;
@@ -2873,7 +2876,7 @@ body.ph-share-open .scrollbar-track {
 
 /* Caption size xxlg */
 #page-header.ph-cap-xxlg .ph-caption-title {
-  font-size: clamp(48px, 10vw, 180px);
+  font-size: clamp(48px, 6vw, 140px);
 }
 @media (min-width: 1025px) {
   #page-header.ph-cap-xxlg.ph-stroke .ph-caption-title {
@@ -2882,13 +2885,13 @@ body.ph-share-open .scrollbar-track {
 }
 #page-header.ph-cap-xxlg .ph-caption-title-ghost {
   padding-top: 5%;
-  font-size: calc(16px + 13vw);
+  font-size: calc(12px + 8vw);
 }
 
 /* Page header full screen */
 @media (min-width: 1025px) {
   #page-header.ph-full {
-    /* display: flex; */
+    display: flex;
     align-items: center;
     min-height: 100vh;
   }
@@ -3311,6 +3314,7 @@ body:not(.is-mobile) .ttgr-cat-close {
   position: relative;
   float: left;
   width: 100%;
+  /* height: 90%; */
 }
 .ttgr-item-inner {
   position: relative;
@@ -3318,6 +3322,22 @@ body:not(.is-mobile) .ttgr-cat-close {
 
 /* tt-Grid height class ("ttgr-height"). Use it on an element inside "ttgr-item-inner".
 ======================================== */
+@media (min-width: 480px){
+  .lg-trigger{
+    /* width: 80%; */
+    /* height: 260px; */
+    display: flex;
+    justify-content: center;
+  }
+ #iframeYoutube{
+  width: 80%;
+  height: 60vh;
+  /* display: flex;
+  justify-content: center; */
+}
+}
+
+
 .ttgr-height {
   position: relative;
   padding-bottom: 35%;
@@ -3890,6 +3910,7 @@ body.tt-boxed .tt-wrap .tt-grid.ttgr-gap-4 {
 @media (min-width: 768px) {
   .tt-grid.ttgr-gap-4 .ttgr-item-inner {
     margin: 0 3vw 6vw 3vw;
+    height: 330px;
   }
 }
 @media (max-width: 768px) {
@@ -3997,6 +4018,7 @@ body.tt-boxed .tt-wrap .tt-grid.ttgr-gap-6 {
 .pgi-image-holder {
 }
 .pgi-image-inner {
+  height: 306px;
 }
 .pgi-image {
   position: relative;
@@ -4919,7 +4941,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
   display: flex;
   align-items: center;
   text-decoration: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Portfolio interactive item title */
@@ -6395,7 +6417,7 @@ video.tt-pci-video {
   display: flex;
   align-items: center;
   text-decoration: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Page nav title */
@@ -6414,8 +6436,8 @@ video.tt-pci-video {
   transition: transform 0.6s cubic-bezier(0.51, 0.57, 0.17, 1);
 
   /* Ellipsis */
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
 }
 .tt-pn-hover-title {
   position: absolute;
@@ -9889,11 +9911,11 @@ body:not(.tt-boxed) .tt-footer-inner,
     align-items: center;
     justify-content: center;
   }
-  .footer-col.tt-align-center-right {
+  /* .footer-col.tt-align-center-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-  }
+  } */
 
   .footer-col.tt-align-bottom {
     display: flex;
@@ -9938,8 +9960,8 @@ body:not(.tt-boxed) .tt-footer-inner,
     margin-right: 13px;
   }
   #tt-footer .footer-social .social-buttons {
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0; */
+    /* visibility: hidden; */
     transform: translate3d(0, -50%, 0);
   }
   #tt-footer .footer-social .footer-social-text,
