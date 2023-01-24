@@ -2916,7 +2916,7 @@ body.ph-share-open .scrollbar-track {
 ========================= */
 /* Position center */
 #page-header.ph-center {
-  text-align: center;
+  text-align: justify;
 }
 @media (min-width: 1025px) {
   #page-header.ph-center .page-header-inner {
