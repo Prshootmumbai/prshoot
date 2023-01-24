@@ -6454,12 +6454,19 @@ video.tt-pci-video {
 @media (max-width: 1024px) {
   .tt-pn-title:hover {
     opacity: 1;
+   
   }
   .tt-pn-hover-title {
     display: none;
   }
 }
 
+@media (min-width: 400px) {
+  .tt-pn-title {
+    font-size: 3rem;
+   
+  }
+}
 @media (min-width: 1025px) {
   .tt-pn-link:hover .tt-pn-title {
     transform: translate3d(-50%, -100%, 0);
@@ -6572,6 +6579,7 @@ video.tt-pn-video {
   .tt-page-nav.tt-pn-stroke .tt-pn-title {
     font-weight: bold;
     font-weight: 800;
+    
     opacity: 0.6;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
@@ -9985,7 +9993,7 @@ body:not(.tt-boxed) .tt-footer-inner,
 ============================ */
 @media (max-width: 1024px) {
   #tt-footer {
-    padding: 60px 0 80px 0;
+    padding: 60px 0 20px 0;
   }
   .tt-footer-inner {
     display: flex;
