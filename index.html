@@ -170,13 +170,13 @@
                         <div class="tt-ol-submenu">
                           <ul class="tt-ol-submenu-list">
                             <li>
-                              <a href="narrative.html">Narratives</a>
+                              <a href="carporate.html">Commercials </a>
                             </li>
                             <li>
                               <a href="documentry.html">Documentary</a>
                             </li>
                             <li>
-                              <a href="carporate.html">Commercials </a>
+                              <a href="narrative.html">Narratives</a>
                             </li>
                           </ul>
                           <!-- /.tt-ol-submenu-list -->
@@ -310,7 +310,6 @@
             <!-- End page header caption -->
           </div>
           <!-- /.page-header-inner -->
-
           <!-- Begin scroll down circle (you can change "data-offset" to set scroll top offset) 
 						============================== -->
           <a href="#" class="scroll-down-circle" data-offset="30">
@@ -330,10 +329,18 @@
             </div>
             <!-- /.sdc-inner -->
           </a>
-          <!-- End scroll down circle -->
+
         </div>
         <!-- End page header -->
 
+        <!-- <div class="popupScroll">
+          <div class="popup">
+            <button id="close">&times;</button>
+            <p>We'r provide secure data to our users</p>
+
+            <a href="#">Let's Go</a>
+          </div>
+        </div> -->
         <!-- *************************************
 					*********** Begin page content *********** 
 					************************************** -->
@@ -376,16 +383,20 @@
 									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
 									-->
                     <div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
-                      <a href="narrative.html" class="pi-item-title-link">
-                        <h2 class="pi-item-title">Narratives</h2>
-                        <!-- <div class="pi-item-hover-title">Narratives</div> -->
+                      <a href="carporate.html" class="pi-item-title-link">
+                        <h2 class="pi-item-title">Commercials</h2>
+                        <!-- <div class="pi-item-hover-title">Commercials</div> -->
                       </a>
                       <div class="pi-item-category-wrap">
-                        <!-- <div class="pi-item-category"></div> -->
+                        <div class="pi-item-category"></div>
                         <!-- <div class="pi-item-category">Varia</div> -->
                       </div>
                       <figure class="pi-item-image cover-opacity-2">
-                        <img src="assets/img/custom/narative.jpg" alt="image" />
+                        <video class="pi-item-video" loop muted preload="metadata"
+                          poster="assets/vids/fashion-week.jpg">
+                          <source src="assets/vids/office-team.mp4" type="video/mp4" />
+                          <source src="assets/vids/office-team.webm" type="video/webm" />
+                        </video>
                       </figure>
                     </div>
 
@@ -411,26 +422,20 @@
 									====================================== 
 									* Adjust the "data-scroll-speed" attribute to find a suitable scrolling speed (no effect on mobile devices!).
 									-->
+
                     <div class="portfolio-interactive-item anim-skewinup" data-scroll-speed="3">
-                      <a href="carporate.html" class="pi-item-title-link">
-                        <h2 class="pi-item-title">Commercials</h2>
-                        <!-- <div class="pi-item-hover-title">Commercials</div> -->
+                      <a href="narrative.html" class="pi-item-title-link">
+                        <h2 class="pi-item-title">Narratives</h2>
+                        <!-- <div class="pi-item-hover-title">Narratives</div> -->
                       </a>
                       <div class="pi-item-category-wrap">
-                        <div class="pi-item-category"></div>
+                        <!-- <div class="pi-item-category"></div> -->
                         <!-- <div class="pi-item-category">Varia</div> -->
                       </div>
                       <figure class="pi-item-image cover-opacity-2">
-                        <video class="pi-item-video" loop muted preload="metadata"
-                          poster="assets/vids/fashion-week.jpg">
-                          <source src="assets/vids/office-team.mp4" type="video/mp4" />
-                          <source src="assets/vids/office-team.webm" type="video/webm" />
-                        </video>
+                        <img src="assets/img/custom/narative.jpg" alt="image" />
                       </figure>
                     </div>
-
-                    <!-- End portfolio interactive item -->
-
                     <!-- End portfolio interactive item -->
                   </div>
                 </div>
@@ -636,7 +641,7 @@
             <div class="tt-page-nav tt-pn-scroll">
               <a href="contact.html" class="tt-pn-link anim-fadeinup">
                 <div class="tt-pn-title">
-                  We've helped tell a story to
+                  We've helped tell a story
                 </div>
                 <!-- <div class=" tt-pn-hover-title">We are proud of...</div> -->
               </a>
@@ -658,7 +663,7 @@
               <div class="row">
                 <div class="column">
                   <img src="assets/img/clients/client-1.png" data-src="assets/img/clients/client-1.png"
-                    class="tt-lazy anim-fadeinup" alt="Image" />
+                    class="tt-lazy anim-fadeinup" id="addBgfixed" alt="Image" />
                 </div>
                 <div class="column">
                   <img src="assets/img/clients/client-2.png" data-src="assets/img/clients/client-2.png"
@@ -683,7 +688,7 @@
                 </div>
                 <div class="column">
                   <img src="assets/img/clients/client-7.png" data-src="assets/img/clients/client-7.png"
-                    class="tt-lazy anim-fadeinup" id="addBackground" alt="Image" />
+                    class="tt-lazy anim-fadeinup" id="addBgfixed2" alt="Image" />
                 </div>
                 <div class="column">
                   <img src="assets/img/clients/client-9.png" data-src="assets/img/clients/client-9.png"
@@ -759,7 +764,7 @@
                 <!-- /.tt-section-inner -->
               </div>
               <div class="text-xxlg font-alter text-gray-2">
-                <p class="anim-fadeinup text-align-justify">
+                <p class="anim-fadeinup">
                   We’re a specialist film production company, based in Mumbai
                   and working across India and abroad as well. Our team
                   includes expert producers, editors, camera operators, motion

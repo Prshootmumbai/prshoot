@@ -97,6 +97,14 @@
       }, 0);
     });
 
+
+    /* --------------popup homepage------------- */
+
+    // document.querySelector("#close").addEventListener("click", function () {
+    //   document.querySelector(".popup").style.display = "none";
+    // });
+    /* --------------end popup homepage------------- */
+
     // Transitions In (when "ptr-overlay" slides in).
     // =================
     function RevealLoad() {
