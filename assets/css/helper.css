@@ -263,6 +263,8 @@ p.text-xlg {
 }
 
 .text-xxlg {
+	
+	text-align: justify;
 	font-size: calc(100% + 0.7vw) !important;
 }
 .text-xxlg p,
