@@ -171,8 +171,6 @@ body {
   /* background-image: url(../img/clients/b-2.jfif); */
 }
 #addBgfixed2{
-  /* margin-top: 7px; */
-  margin-top: 14px;
     width: 38%;
     height: 30%;
     border-bottom-left-radius: 30%;
@@ -181,7 +179,8 @@ body {
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
     /* border-style: groove; */
-  background-image: url(../img/clients/b-2.jfif);
+  background-image: url(../img/clients/b-1.jfif);
+  /* background-image: url(../img/clients/bg-3.jfif); */
 }
 @media only screen and (min-width: 600px){
   #addBgfixed{
@@ -221,6 +220,7 @@ body {
 
 p {
   margin: 0 0 30px;
+  padding: 10px;
 }
 
 a {
@@ -6505,7 +6505,7 @@ video.tt-pci-video {
   position: relative;
   display: block;
   left: 50%;
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   font-weight: 500;
   color: #fff;
@@ -6541,7 +6541,7 @@ video.tt-pci-video {
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
   .tt-pn-title {
    
     font-size: 3rem;
