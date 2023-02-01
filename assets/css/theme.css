@@ -5075,9 +5075,11 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
     animation-play-state: paused;
     /* animation-duration is handled by js. */
   }
-  .pi-item-title-link:hover .pi-item-hover-title span {
+  
+  /* animation-duration is handled by js. */
+  /* .pi-item-title-link:hover .pi-item-hover-title span {
     animation-play-state: running;
-    /* animation-duration is handled by js. */
+    
   }
   @keyframes marquee {
     from {
@@ -5087,7 +5089,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
       transform: translateX(-100%);
     }
   }
-}
+} */
 @media (max-width: 1024px) {
   .pi-item-title {
     opacity: 0.9;
@@ -5122,11 +5124,11 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
   bottom: 0;
   z-index: -1;
 }
-/* @media (min-width: 1025px) {
+@media (min-width: 1025px) {
   .portfolio-interactive-item .pi-item-image {
     display: none;
   }
-} */
+}
 @media (max-width: 1024px) {
   .pi-item-image {
     overflow: hidden;
