@@ -170,18 +170,7 @@ body {
   margin-top: 20px;
   /* background-image: url(../img/clients/b-2.jfif); */
 }
-#addBgfixed2{
-    width: 38%;
-    height: 30%;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    border-top: #000;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-    /* border-style: groove; */
-  background-image: url(../img/clients/b-1.jfif);
-  /* background-image: url(../img/clients/bg-3.jfif); */
-}
+
 @media only screen and (min-width: 600px){
   #addBgfixed{
     margin-top: 70px;
@@ -2627,7 +2616,7 @@ a.ph-category:hover {
   position: absolute;
   display: block;
   left: 32%;
-  top: 32%;
+  top: 50%;
   font-size: 16px;
   color: #999;
   transform: translate(-50%, -50%);
