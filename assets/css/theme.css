@@ -5056,7 +5056,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
     width: fit-content;
     display: flex;
   }
-
+/* 
   .pi-item-title-link:hover .pi-item-title {
     transform: translate3d(0, -100%, 0);
     transition-delay: 0.1s;
@@ -5064,7 +5064,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
   .pi-item-title-link:hover .pi-item-hover-title {
     transform: translate3d(0, 0, 0);
     transition-delay: 0.1s;
-  }
+  } */
 
   .pi-item-hover-title span {
     align-items: center;
@@ -5122,11 +5122,11 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
   bottom: 0;
   z-index: -1;
 }
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
   .portfolio-interactive-item .pi-item-image {
     display: none;
   }
-}
+} */
 @media (max-width: 1024px) {
   .pi-item-image {
     overflow: hidden;
