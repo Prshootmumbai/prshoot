@@ -2102,7 +2102,7 @@ body:not(.tt-boxed) .page-header-inner,
     padding-bottom: 140px;
   }
   body.ph-image-on #page-header:not(.project-info-list-on) .page-header-inner {
-    padding-top: 300px;
+    /* padding-top: 300px; */
     padding-bottom: 260px;
   }
 
@@ -2596,7 +2596,7 @@ a.ph-category:hover {
   position: absolute;
   display: block;
   left: 3%;
-  bottom: -100px;
+  bottom: -30px;
   width: 250px;
   /* height: 250px; */
   z-index: 9;
@@ -5077,10 +5077,11 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
   }
   
   /* animation-duration is handled by js. */
-  /* .pi-item-title-link:hover .pi-item-hover-title span {
+   .pi-item-title-link:hover .pi-item-hover-title span {
     animation-play-state: running;
     
   }
+  
   @keyframes marquee {
     from {
       transform: translateX(0);
@@ -5089,7 +5090,7 @@ body.tt-boxed .tt-wrap .portfolio-interactive {
       transform: translateX(-100%);
     }
   }
-} */
+} 
 @media (max-width: 1024px) {
   .pi-item-title {
     opacity: 0.9;
